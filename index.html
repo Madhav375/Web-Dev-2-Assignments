@@ -9,4 +9,41 @@
 
 <body>
 
-<h2>Smart Event Dashboard</h2>
+<h1>Smart Event Dashboard</h1>
+
+<div id="mainContainer">
+
+    <div class="formBox">
+
+        <h3>Add New Event</h3>
+
+        <form id="eventForm">
+
+            <label>Event Name</label>
+            <input type="text" id="name" required>
+
+            <label>Event Date</label>
+            <input type="date" id="date" required>
+
+            <label>Category</label>
+            <select id="type">
+                <option value="Seminar">Seminar</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Meeting">Meeting</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Description</label>
+            <textarea id="desc" required></textarea>
+
+            <button type="submit">Add Event</button>
+
+        </form>
+
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
