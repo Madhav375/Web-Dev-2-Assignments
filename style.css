@@ -30,4 +30,35 @@ input, textarea, select {
     padding: 6px;
     margin-bottom: 10px;
 }
+button {
+    width: 100%;
+    padding: 8px;
+    background: skyblue;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+button:hover {
+    background:powderblue;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Buttons button {
+    width: 48%;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.eventCard {
+    background: #d20ef4;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
