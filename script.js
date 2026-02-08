@@ -28,4 +28,17 @@ form.addEventListener("submit", function(e) {
     form.reset();
 });
 
+eventList.addEventListener("click", function(e) {
+
+    if (e.target.classList.contains("deleteBtn")) {
+        e.target.parentElement.remove();
+    }
+
+});
+
+
+clearBtn.addEventListener("click", function() {
+    eventList.innerHTML = "";
+});
+
 
