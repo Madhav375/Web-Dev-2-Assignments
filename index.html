@@ -11,11 +11,11 @@
 
 <h1>Smart Event Dashboard</h1>
 
-<div id="mainContainer">
+<div id="Container">
 
     <div class="formBox">
 
-        <h3>Add New Event</h3>
+        <h2>Add New Event</h2>
 
         <form id="eventForm">
 
@@ -34,14 +34,30 @@
             </select>
 
             <label>Description</label>
-            <textarea id="desc" required></textarea>
+            <textarea id="text" required></textarea>
 
             <button type="submit">Add Event</button>
 
         </form>
 
     </div>
+        <div>
 
+    <div class="listBox">
+
+        <h3>My Events</h3>
+
+        <div class="Buttons">
+            <button id="sampleBtn">Add Sample</button>
+            <button id="clearBtn">Clear All</button>
+        </div>
+
+        <div id="eventList">
+        </div>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
