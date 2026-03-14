@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="dashboard-wrapper">
+        <div class="top-bar">
+            <h1 class="main-heading">Weather Monitoring System</h1>
+        </div>
+
+        <article class="workspace">
+            <aside class="sidebar-module">
+                <header class="module-header">
+                    <h3>Location Search</h3>
+                </header>
+
+                <div class="search-wrapper">
+                    <input type="text" id="userInputCity" placeholder="Search city (Noida, Delhi...)"
+                        class="city-field">
+                    <button type="button" id="triggerSearch" class="scan-btn">Scan</button>
+                </div>
+
+                <header class="module-header secondary">
+                    <h3>Previous Logs</h3>
+                </header>
+
+                <ul id="historyContainer" class="log-list"></ul>
+            </aside>
+
+            <div class="content-area">
+                <header class="module-header">
+                    <h3>Weather Info</h3>
+                </header>
+
+                <dl class="data-grid">
+                    <div class="data-pair">
+                        <dt>City:</dt>
+                        <dd id="res-city">---</dd>
+                    </div>
+                    <div class="data-pair">
+                        <dt>Temperature:</dt>
+                        <dd id="res-temp">--°C</dd>
+                    </div>
+                    <div class="data-pair">
+                        <dt>Condition:</dt>
+                        <dd id="res-cond">---</dd>
+                    </div>
+                    <div class="data-pair">
+                        <dt>Humidity:</dt>
+                        <dd id="res-hum">--%</dd>
+                    </div>
+                    <div class="data-pair">
+                        <dt>Wind Speed:</dt>
+                        <dd id="res-wind">--m/s</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="status-bar">
+                <output id="runtime-console" class="console-output">
+                    <span class="placeholder-text">// System standing by...</span>
+                </output>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
