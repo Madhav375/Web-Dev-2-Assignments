@@ -1,1 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+}
 
+.container {
+  width: 500px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid gray;
+}
+
+.form button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: lightgray;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 6px;
+  text-align: center;
+}
+
+.pass {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
